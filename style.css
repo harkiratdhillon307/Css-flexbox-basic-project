@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+.flexbox{
+    background: cyan;
+   /* flex-direction: row; row is default of css*/
+}
+
+.flexbox div{
+    flex-basis: 30%; /*it works as width in flexbox*/
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.flexone{
+   /* flex: 1; */
+    background: red;
+}
+
+.flextwo{
+    /*flex: 1;*/
+    background: yellow;
+}
+
+.flexthree{
+   /* flex: 1;*/
+    background: green;
+}
+
+.flexwrap{
+    display: flex;
+    background: black;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexwrap a{
+    color: white;
+    text-decoration: none;
+}
+
+.flexwrap a:hover{
+    color: lightgray;
+    text-decoration: underline;
+    background: darkgray;
+}
+
+@media(min-width: 768px) {
+    .flexbox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

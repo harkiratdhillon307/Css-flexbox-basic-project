@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 30px;
+    background-color: dimgrey;
+}
+
+.flex-container{
+    background-color: dodgerblue;
+    display: flex;
+   /* flex-wrap: wrap;*/             /*used media query*/
+}
+
+.flex-container > div{
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 75px;
+}
+
+@media(max-width: 768px) {
+    .flex-container {
+       flex-wrap: wrap;
+    }
+}
